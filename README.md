@@ -11,9 +11,16 @@ Requires video or images generated with Attention Insight predictive service.
 ## Run
 Currently, all values are set in `calculate`.go`
 
-`go run .`
+`go run . <heatmap-filepath> <saliency-filepath>`
+or 
+`./aoi-calculation <heatmap-filepath> <saliency-filepath>`
+
+Build:
+`go build .`
 
 ## TODO
 
-- [] Allow users to draw aoi on extracted frame
 - [] Improve calculation logic to calculate averages or median in certain periods of frames
+- [] Add image calculation logic, extract to separate file
+- [] Add tests
+- [] Refactor code
